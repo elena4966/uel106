@@ -1,0 +1,304 @@
+
+@font-face { /*Intégration d'une police téléchargée*/
+	font-family : "Super Joyful", Super Joyful;
+	src : url('/fonts/Super Joyful.ttf') format('truetype');
+}
+
+
+/*
+
+sélecteur {
+   propriété: valeur;
+}
+
+Le sélecteur #myid (en CSS) sélectionne l’élément (qui doit être unique) avec l’attribut id="myid" dans mes pages HTML.
+Le sélecteur .myclass (en CSS) sélectionne tous les éléments HTML avec l’attribut class="myclass" dans mes pages HTML.
+margin -> l'élément vis-à-vis du bord de la page
+padding -> entre le texte et le fond
+ */
+
+
+
+h1 {
+	font-family: "Super Joyful", Super Joyful;
+	/* choix de la police */
+	font-size: 3.7em;
+	/* choix de la taille du texte */
+	font-weight: bold;
+	/* style gras */
+	color: #8c3c8c;
+	/* couleur du texte */
+	margin : 0.35em 0.3em 0.35em 0.3em;
+	
+}
+
+h2 {
+	font-family: "Super Joyful", Super Joyful;
+	/* choix de la police */
+	font-size: 2em;
+	/* choix de la taille du texte */
+	font-weight: bold;
+	/* style gras */
+	color: #8c3c8c;
+	margin : 0.25em 0.25em 0.7em 0.25em;
+
+}
+
+h3, caption, summary {
+	font-family: "Super Joyful", Super Joyful;
+	/* choix de la police */
+	font-size: 1.7em;
+	/* choix de la taille du texte */
+	font-weight: bold;
+	/* style gras */
+	color: #8c3c8c;
+	margin : 0.25em 0.25em 0.7em 0.25em;
+}
+
+p {
+	font-family: "Verdana";
+	/* choix de la police */
+	font-size: 1.05em;
+	color: #22021e;
+	margin : 0.2em;
+}
+
+li {
+	font-family: "Verdana";
+	font-size: 0.9em;
+}
+
+.bande_nav li {
+	display: inline;
+	margin-right : 10%;
+}
+
+
+ul {
+	list-style-type : none ;/*Pour enlever les points de la liste ul*/
+}
+
+
+
+
+
+
+
+body {
+	padding : 2% 4% 2% 4%;
+}
+
+nav {
+	padding : 0px 25px 20px 25px;
+}
+
+header {
+	padding : 0%;
+	text-align : center;
+	padding : 25px 40px 25px 40px; /* marge personnalisée : haut, droite, bas, gauche */
+	margin : 0;
+}
+
+header.header_neutre {
+	background-color : #e7d0ba ;
+}
+
+header.header_video {
+    position: relative;
+    overflow: hidden; /* pour cacher ce qui dépasse */
+}
+
+/* Vidéo en arrière-plan */
+.video_v{
+	display : flex ;
+	width: 100%;     /* s’adapte à la largeur choisie */
+    height: auto;
+	max-height : 300px ;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;             /* Passe derrière le texte */
+    object-fit: cover;       /* Remplit le header sans déformation */
+}
+
+
+.video_iframe {
+	display: flex;
+	margin : auto;
+}
+
+
+
+
+
+section {
+	margin : 3.2em 1.5em 3.2em 1.5em;
+}
+
+div {
+	border-style : solid;
+	border-width : 1px;
+	/*épaisseur d'une bordure*/
+	border-color : #e7d0ba;
+}
+
+footer {
+	margin : 5% 1% 5% 1%;
+	padding : 10px 25px 10px 25px;
+	background-color : #e7d0ba;
+}
+
+span {
+	font-style : italic;
+}
+
+
+
+table {
+	text-align : center;
+	border-collapse : collapse;
+	margin : auto; /* permet de mettre le tableau au milieu de la page*/
+}
+
+
+th {
+	font-family: "Verdana";
+	font-size: 0.9em;
+	border-style : solid;
+	border-width : 1.5px;
+	border-color : #22021e;
+	background-color : #e7d0ba;
+	padding : 2%;
+	/* Permet d'avoir une marge dans la case pour la lisibilité */
+}
+
+td {
+	font-family: "Verdana";
+	font-size: 0.9em;
+	border-style : solid;
+	border-width : 1.5px;
+	border-color : #22021e;
+	background-color : #fff6f0;
+	padding : 2%;
+}
+
+
+
+.nmbr_mots {
+	font-style : italic;
+	/* style italique */
+	font-size: 0.9em;
+	color : #4f354b;
+}
+
+
+
+
+.menu {
+  overflow: hidden;
+}
+
+.menu summary {
+  background: #e7d0ba;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px; /*pour arondir légèrement les bords*/
+}
+
+.lien_credit {
+	padding-left : 2rem ;
+}
+
+
+
+.presentation {
+	font-weight : bold;
+}
+
+a:link {
+	color : #22021e;
+}
+
+a:visited {
+	color : #8c3c8c ;
+}
+
+a.link_nav {
+	color : #22021e;
+	text-decoration : none;
+}
+
+a:hover {
+	/*pseudo-classe*/
+	color : #8c3c8c;
+}
+
+#page_actuelle {
+	color : #8c3c8c;
+}
+
+
+#link_to_top {
+	position : fixed;
+	bottom : 0px;
+	right : 0px;
+	background-color : #ffffff;
+	padding : 15px;
+}
+
+h3+p::first-letter, h3+figure+p::first-letter {
+	/*Pseudo-élément pour sélectionner uniquement la première lettre du premier paragraphe suivant chaque titre h3*/ /*même lorsqu'il y a une image entre les deux*/
+	font-size: 1.4em;
+}
+
+
+
+/*images*/
+
+figure {
+	width: 20%;
+}
+
+/* L’image */
+.bloc-image-1 img {
+    width: 100%;     /* s’adapte à la largeur choisie */
+    height: auto;
+}
+.bloc-image-2 img {
+    width: 100%;
+    height: auto;
+}
+
+#illustration_ordi_cahier {
+	width: 80%;
+	height: 80%;
+}
+.bloc-image-2 { /*images placées à droite*/
+	display: flex;
+	float : right ;
+	flex-direction : column;
+	justify-content : space-between ;
+	align-items : center;
+	gap : 1rem;
+	width: 20%;
+	margin: 0.5em 0.5em 0.5em 2em; /* marges ajustées */
+}
+.bloc-image-1 { /*images placées à gauche*/
+	float : left ;
+	flex-direction : column;
+	justify-content : space-between ;
+	align-items : center;
+	gap : 1rem;
+	width: 20%;
+	margin: 0.5em 2em 0em 0.5em;
+}
+.legende {
+	font-style : italic;
+	font-size: 0.7em;
+	color : #664c61;
+	padding : 0em 0em 1.5em 0em;
+	text-align: center;
+}
