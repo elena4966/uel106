@@ -1,7 +1,122 @@
+<!DOCTYPE html>
+<!-- Pour que le naviguateur comprenne que notre page est écrite en html 5-->
+
 <html>
-  <head></head>
-  <body>
-    <h1>Hello Github !!!</h1>
-    <p>V2</p>
-  </body>
+<!-- L'élément racine de la page-->
+
+
+	<head>
+	<!-- L'entête de la page, les infos générales-->
+
+		<title>Accueil</title>
+		<!-- Titre qui apparaîtra dans l'onglet du naviguateur-->
+
+		<meta charset="UTF-8"/>
+		<!-- La page utilise cet encodage-->
+		<!-- Pour HTML 5 ce sont les seules balises obligatoires à déclarer dans head-->
+		
+		<link rel="stylesheet" type="text/css" href="feuille_de_style.css">
+		<!--rel="stylesheet" précise que ce lien pointe une feuille de style-->
+		
+		<link rel="icon" href="./media/favicon.png" type="image/png" />
+
+	</head>
+
+
+	<body id="haut">
+	<!-- Structure le contenu de la page -->
+		
+		<nav>
+			<p>
+				<ul class="bande_nav">
+					<li id="page_actuelle">Accueil</li>
+					<li><a href="./choix_de_formation.html" class="link_nav">Choix de formation</a></li>
+					<li><a href="./organisation.html" class="link_nav">Organisation</a></li>
+				</ul>
+			</p>
+		</nav>
+			
+			
+		<header class="header_video">
+			<h1>Bienvenue</h1>
+			<p class="presentation">Découvrez la vie d'Éléna Cazot à travers ces différents articles. Chacun vous permettra d'apprendre à la connaître sous divers points de vue. Vous découvrirez une partie de sa vie personnelle ainsi que son intérêt pour les métiers du web.</p>
+			<video class="video_v" src="media/video_accueil1.mp4" ;muted ; autoplay ; loop></video>
+			
+		</header>
+		
+
+
+		<section>
+			<h2>Sommaire de la page</h2>
+			<p>
+				<ol>
+					<li><a href="#Mon parcours scolaire" class="link_nav">Mon parcours scolaire</a></li>
+					<li><a href="#Mes passe-temps favoris" class="link_nav">Mes passe-temps favoris</a></li>
+				</ol>
+			</p>
+		</section>
+
+
+		<div>
+		
+			<section>
+				<h2>Présentation personnelle</h2>
+				<p class="nmbr_mots">mots : 420</p>
+				<p class="presentation">Découvrez ma présentation personnelle, de mon enfance à ma vie d'aujourd'hui. Entre passion, famille et simplicité, c'est une histoire authentique et touchante.</p>
+			</section>
+				
+			<section>
+				<h3 id="Mon parcours scolaire">Mon parcours scolaire</h3>
+				<p>Mon parcours semble tout à fait commun. Née le 22 juin 2006 dans une contrée reculée de Paris, j’ai grandi dans un petit village de la Dordogne au sein d’une famille soudée qui m’apportait l’éducation dont je nécessitais. J’ai eu la chance de pouvoir faire l’école à la maison durant quatre années, ce qui m’a permis d’apprendre à être efficace dans mon travail et organisée. J'ai aussi pour développer ma curiosité de manière générale, et mon intérêt pour les activités pratiques que l'on peut retrouver dans les matières scientifiques.</p>
+				<p>Après cela, j’ai intégré le collège de mon village et eu la chance de pouvoir approfondir de nombreuses matières, telles que la technologie qui m'intéressait particulièrement. J'ai choisi de m'orienter vers un bac général pour ne pas me fermer de porte, avec les spécialités mathématiques et NSI (numérique et sciences informatiques) pour faire suite à la technologie au collège et la SNT (sciences numériques et technologie) en seconde. Ces spécialités maths et NSI m’ont permis de débuter concrètement dans l’informatique avec des camarades qui m’ont beaucoup appris sur le sujet. C’est ainsi que j’ai développé mon projet professionnel.</p>
+			</section>
+
+			<section>
+				<h3 id="Mes passe-temps favoris">Mes passe-temps favoris</h3>
+				<!--<img id="illustration_cinema" src="./media/illustration_cinema.jpg" alt="Illustration cinema" width="320" height="206">
+				<p class="legende">Illustration de cinéma</p>-->
+				
+				<figure class="bloc-image-1">
+					<img src="./media/illustration_cinema.jpg" alt="Illustration du cinéma">
+					<figcaption class="legende">Illustration du cinéma</figcaption>
+				</figure>
+				<p>En 19 ans, je me suis intéressée à différentes activités créatives et manuelles. D’abord le dessin vers mes huit ans. J’intègre ensuite un groupe de danse qui me suit pendant de très nombreuses années avant de s’arrêter suite à la dissolution du groupe. J’essaie aussi le piano durant trois ans mais c’est pour le théâtre que mon cœur se tourne. Après sept années de théâtre, je concrétise mes connaissances en commençant par de la figuration, notamment dans le film <a href="https://fr.wikipedia.org/wiki/Rabia_(film)">Rabia</a>. Cette première expérience professionnelle m’a permis de voir de manière bien plus concrète le milieu du cinéma et cela m’a beaucoup plu.</p>
+				<p>Pourtant, je ne me dirige pas vers des études de cinéma puisque j’ai aussi développé un intérêt pour le fonctionnement du cerveau humain. Les neurosciences, le mentalisme et l’hypnose sont des thèmes qui me passionnent, alors j’intègre une licence de psychologie dans l’espoir d’acquérir des connaissances sur ces sujets. Mais la licence est très ciblée sur la recherche et cela ne me correspondait pas réellement, j’ai donc préféré changer de voie et me lancer dans le DEUST WMI.</p>
+				<p>Intéressée par de nombreux sujets, j’explore de multiples domaines et essaie, dans l’objectif d’apprendre et de développer mes compétences.</p>
+			</section>
+			
+			
+			<section>
+				<details class="menu">
+					<summary>Crédits images</summary>
+						<a class="lien_credit" href="https://pixabay.com/illustrations/cinema-movie-camera-projector-film-4153289/" target="_blank">Illustration du cinéma</a><br>
+						<a class="lien_credit" href="https://icones8.fr/icons/set/favicon-computer" target="_blank">Favicon</a>
+						
+				</details>
+				<details class="menu">
+					<summary>Crédit vidéo</summary>
+						<a class="lien_credit" href="https://pixabay.com/videos/technology-computer-computer-science-17088/" target="_blank">Vidéo flux</a>
+						
+				</details>
+				
+			</section>
+			
+			
+			
+
+		</div>
+
+		<p><a href="#haut" id="link_to_top" class="link_nav">Vers le haut de page</a></p>
+
+		<footer>
+			<p>Pour me contacter : <a href="mailto:elena.cazot@etu.unilim.fr?subject=J'ai visité votre site">elena.cazot@etu.unilim.fr</a></p><br>
+			<p>© 2025. Tous droits réservés.</p>
+		</footer>
+
+
+
+	</body>
+
+
+
 </html>
